@@ -1,0 +1,143 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Sean Crowley
+title: Software Engineer
+#email: 
+website: smcrowley8.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: 
+github_username:  smcrowley8
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: 
+# linkedin_username: 
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: 
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+#additional_links:
+#- title: itsgoingto.be
+#  icon: fas fa-globe
+#  url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/me.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my names Sean. I'm a software engineer with most of my industry experience surrounding software test engineering.
+
+  I am most skilled in: <mark>Continuous Integration</mark> 
+
+  My other tech skills include
+  - <mark>python</mark>           
+  - <mark>c++</mark>
+  - <mark>git</mark>              
+  - <mark>AWS</mark>
+  - <mark>firebase</mark>         
+  - <mark>docker</mark>
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Chat Bot
+        link: https://github.com/smcrowley8/DataSci/blob/main/ChatBot/ChatBot_howTo.ipynb
+        link_text: link
+        additional_links:
+          - title: smcrowley8/DataSci
+            icon: fab fa-github
+            url: https://github.com/smcrowley8/DataSci/tree/main/ChatBot
+        description: |
+          Chat bot made with <mark>python</mark>. Libraries: <mark>nltk</mark> and <mark>keras</mark> utilized for nlp and model creation/training.
+          
+          UI made with <mark>tkinter</mark>.
+      - layout: top-middle
+        title: Speech Analysis
+        link: https://github.com/smcrowley8/DataSci/blob/main/simpleSpeechEmotionalRecognition/recognize%20emotion%20from%20speech%20audio.ipynb
+        link_text: link
+        additional_links:
+          - title:  smcrowley8/DataSci
+            icon: fab fa-github
+            url: https://github.com/smcrowley8/DataSci/tree/main/simpleSpeechEmotionalRecognition
+        description: |
+          Utilized <mark>python</mark> and the library <mark>librosa</mark>. 
+      - layout: top-middle
+        title: AES project
+        additional_links: 
+          - title: smcrowley8/myAES
+            icon: fab fa-github
+            url: https://github.com/smcrowley8/myAES
+        description: |
+          Python package utilizing <mark>poetry</mark> for package management and <mark>click</mark> for <mark>CLI</mark> entrypoint.
+          
+          Repo utilizes <mark>circleCI</mark> with <mark>GithubActions</mark> for continuous integration. final CLI package is in progress.
+      - layout: top-middle
+        title: Angular PWA
+        link_text: link
+        link: https://admin-lt-pwa.web.app
+        additional_links: 
+        description: |
+          <mark>Progressive Web App</mark> made with <mark>Angular</mark> and <mark>Firebase</mark>. <mark>GithubActions</mark> utilized for <mark>Continuous Integration</mark>.
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Narrative Science
+        link: https://narrativescience.com/
+        # link_text: https://narrativescience.com/
+        sub_title: Software test Engineer
+        caption: September 2021 - Present
+        quote: >
+          "Data Storytelling can make the world a better place. We want to see our technology used for good because we know it can make a tremendous social impact."
+        description: | # this will include new lines to allow paragraphs
+            Worked with an amazing team on keeping our automated e2e, integration, and contract tests up to date with the products developement. 
+            
+            Used <mark>Gherkin</mark> with python to make writing tests easier. Worked with <mark>AWS</mark> and <mark>docker</mark> for integrating and testing changes in a cloud based system.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: East Stroudsburg University
+        caption: 2017 - 2021
+        sub_title: B.S. Computer Science, B.S. Applied Mathematics
+        
+
+# Footer
+footer_show_references: true
+references_title: References on request 
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
